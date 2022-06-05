@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+      
+
+       <!-- css -->
+       <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}" />
+
+
+</head>
+<body>
+  <div id="image" style="background:url(/static/images/music.jpg) center / cover no-repeat fixed;"></div> 
+
+  <h4><mark>Designing and Building AI Products and Services- Recommendations Systems</mark></h4>
+   
+
+  <form name="passdata" action="/about" method="post">
+        <div>
+    <table class="center">
+     <tr>
+     <th>
+      <h4>Songs Recommendations</h4>
+     </th>
+      
+
+     <th>
+      
+      <h4>Movies Rank Based Recommendations</h4> 
+
+     </th>
+     </tr>
+     <tr>
+        <td>
+    
+            
+           <label for="quantity"> Song Id[1-4999] :</label>
+           <input type="number" id="quantity" name="number" min="1" max="4999"1>
+           <label for="recommend">Recommendations[1-40]</label>
+           <input type="number" id="recommend" name="recommend" min="1" max="40">
+       </td>
+     
+       
+       <td>
+    
+            
+         <label for="numovie"># of movies :</label>
+         <input type="number" id="numovie" name="numovie" min="1" max="100"1>
+         <label for="interaction"># of interaction</label>
+         <input type="number" id="interaction" name="interaction" min="100" max="1000">
+    </td>
+
+         
+     </tr>
+    </table>
+    </select>
+    
+    <center><button type="submit" class="btn">Get  Recommendations</button><center>
+    
+     
+     </form>
+
+{% if prediction_text %}
+ <style>
+table, th, td {
+  border:4px solid green;
+}
+</style>
+<body>
+ 
+
+<table style="width:100%">
+  <colgroup>
+    <col span="1" style="background-color: rgba(126, 6, 6, 0.788)">
+  </colgroup>
+  <tr>
+  <th>Songs / Movies Recommendation List </th>
+ 
+  </tr>
+  <tr>
+  <td>{{ prediction_text }}</td>
+ 
+  </tr>
+{% endif %} 
+
+</div>
+</div>
+ </body>
+</html>

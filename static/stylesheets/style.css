@@ -1,0 +1,71 @@
+body {
+	background-image: url(/static/images/music.jpg);
+    background-size: cover;
+	color:rgb(255, 255, 255);
+	text-align: center;
+	padding-top:5px;
+}
+
+h1 {
+	 
+	color:white;
+	text-align:center;
+	font-size: 25px;
+}
+
+h2 {
+	 
+	color:white;
+	text-align:top;
+	font-size: 25px;
+}
+
+h3 { padding-top:50px;
+	color:white;
+	text-align:top;
+	font-size: 26px;
+}
+
+h4 { padding-top:50px;
+	color:rgb(255, 13, 13);
+	text-align:top;
+	font-size: 27px;
+}
+
+
+
+p1{
+	font-size:20px;
+	color: black
+}
+
+span {
+	background-color: white;
+}
+
+form {
+	padding-top:50px;
+	width:100%;
+}
+
+
+center {
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+
+btn {
+	background-color: dodgerblue;
+	color: white;
+	padding: 15px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+  }
+  
+btn:hover {
+	opacity:3;
+  }
+
